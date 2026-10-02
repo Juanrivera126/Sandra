@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Slide Narration with HTML5 Audio</title>
+
+  <!-- Required stylesheet -->
+  <link rel="stylesheet" href="lib/deck.js/core/deck.core.css">
+
+  <!-- Extension CSS files go here. Remove or add as needed. -->
+  <link rel="stylesheet" href="lib/deck.js/extensions/menu/deck.menu.css">
+  <link rel="stylesheet" href="lib/deck.js/extensions/navigation/deck.navigation.css">
+  <link rel="stylesheet" href="lib/deck.js/extensions/status/deck.status.css">
+  <link rel="stylesheet" href="lib/deck.js/extensions/hash/deck.hash.css">
+  <link rel="stylesheet" href="lib/deck.js/extensions/scale/deck.scale.css">
+  <link rel="stylesheet" href="lib/deck.automatic.js/automatic/deck.automatic.css">
+
+  <!-- Style theme. More available in /themes/style/ or create your own. -->
+  <link rel="stylesheet" href="lib/deck.js/themes/style/web-2.0.css">
+
+  <link rel="stylesheet" href="css/deck.narrator.css">
+
+  <!-- Transition theme. More available in /themes/transition/ or create your own. -->
+  <link rel="stylesheet" href="lib/deck.js/themes/transition/horizontal-slide.css">
+
+  <!-- Required Modernizr file -->
+  <script src="lib/deck.js/modernizr.custom.js"></script>
+</head>
+<body class="deck-container">
+
+<!-- Inicio de diapositivas -->
+
+<section class="slide story-cover" data-narrator-duration="7" data-duration="7000">
+  <div class="story-cover-content">
+    <p class="story-cover-kicker">¡Abre bien los ojos!</p>
+    <h1>Los tres pelos de oro <span>del diablo</span></h1>
+    <p class="story-cover-subtitle">Una aventura mágica llena de sorpresas</p>
+    <footer>¡Pulsa Play y comienza el cuento!</footer>
+  </div>
+</section>
+
+<section class="slide story-illustration" data-narrator-duration="34" data-duration="34000">
+  <img src="imagenes/1.jpg" height="700" width="1400"></img>
+</section>
+
+<section class="slide story-illustration" data-narrator-duration="24" data-duration="24000">
+  <img src="imagenes/2.jpg" height="700" width="1400"></img>
+</section>
+
+<section class="slide story-illustration" data-narrator-duration="24" data-duration="24000">
+  <img src="imagenes/3.jpg" height="700" width="1400"></img>
+</section>
+
+<section class="slide story-illustration" data-narrator-duration="53" data-duration="53000">
+  <img src="imagenes/4.jpg" height="700" width="1400"></img>
+</section>
+
+<section class="slide story-illustration" data-narrator-duration="30" data-duration="30000">
+  <img src="imagenes/5.jpg" height="700" width="1400"></img>
+</section>
+
+<section class="slide story-illustration" data-narrator-duration="60" data-duration="60000">
+  <img src="imagenes/6.jpg" height="700" width="1400"></img>
+</section>
+
+<section class="slide story-illustration" data-narrator-duration="30" data-duration="30000">
+  <img src="imagenes/7.jpg" height="700" width="1400"></img>
+</section>
+
+<section class="slide story-illustration" data-narrator-duration="53" data-duration="53000">
+  <img src="imagenes/8.jpg" height="700" width="1400"></img>
+</section>
+
+<section class="slide story-illustration" data-narrator-duration="25" data-duration="25000">
+  <img src="imagenes/9.jpg" height="700" width="1400"></img>
+</section>
+
+<section class="slide story-illustration" data-narrator-duration="68" data-duration="68000">
+  <img src="imagenes/10.jpg" height="700" width="1400"></img>
+</section>
+
+<section class="slide story-illustration" data-narrator-duration="68" data-duration="68000">
+  <img src="imagenes/11.jpg" height="700" width="1400"></img>
+</section>
+
+<section class="slide story-illustration" data-narrator-duration="116" data-duration="116000">
+  <img src="imagenes/12.jpg" height="700" width="1400"></img>
+</section>
+
+<section class="slide story-illustration" data-narrator-duration="137" data-duration="137000">
+  <img src="imagenes/13.jpg" height="700" width="1400"></img>
+</section>
+
+<section class="slide story-illustration" data-narrator-duration="126" data-duration="126000">
+  <img src="imagenes/14.jpg" height="700" width="1400"></img>
+</section>
+
+<!-- Fin diapositivas -->
+
+
+
+
+<!-- deck.navigation snippet -->
+		      
+	 <div aria-role="navigation"> <a href="#" class="deck-prev-link" title="Previa">←</a>
+        <a href="#" class="deck-next-link" title="Próxima">→</a> </div>
+<!-- deck.status snippet -->
+<p class="deck-status">
+  <span class="deck-status-current"></span>
+  /
+  <span class="deck-status-total"></span>
+</p>
+
+<!-- deck.hash snippet -->
+<a href="." title="Permalink to this slide" class="deck-permalink"></a>
+
+<!-- deck.narrator snippet -->
+<audio controls class="deck-narrator-audio" id="narrator-audio">
+  <source src="audio/audio.mp3" type="audio/mp4" />
+  <source src="audio.ogg" type="audio/ogg" />
+  <track kind="caption" src="transcript.vtt" srclang="en" label="English" />
+</audio>
+<!-- End extension snippets. -->
+
+
+<!-- Required JS files. -->
+<script src="lib/deck.js/jquery.min.js"></script>
+<script src="lib/deck.js/core/deck.core.js"></script>
+<!-- Extension JS files. Add or remove as needed. -->
+<script src="lib/deck.js/extensions/hash/deck.hash.js"></script>
+<script src="lib/deck.js/extensions/menu/deck.menu.js"></script>
+<script src="lib/deck.js/extensions/status/deck.status.js"></script>
+<script src="lib/deck.js/extensions/navigation/deck.navigation.js"></script>
+<script src="lib/deck.js/extensions/scale/deck.scale.js"></script>
+<script src="lib/deck.automatic.js/automatic/deck.automatic.js"></script>
+<script src="js/deck.narrator.js"></script>
+
+<!-- Initialize the deck. You can put this in an external file if desired. -->
+<script>
+  $(function() {
+    $.extend(true, $.deck.defaults, {
+      automatic: {
+        startRunning: false,
+        cycle: false
+      }
+    });
+    $.deck('.slide');
+  });
+</script>
+</body>
+</html>
