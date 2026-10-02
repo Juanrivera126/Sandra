@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <base href="./">
+  <title>Pinocho</title>
+  <link rel="stylesheet" href="lib/deck.js/core/deck.core.css">
+  <link rel="stylesheet" href="lib/deck.js/extensions/menu/deck.menu.css">
+  <link rel="stylesheet" href="lib/deck.js/extensions/navigation/deck.navigation.css">
+  <link rel="stylesheet" href="lib/deck.js/extensions/status/deck.status.css">
+  <link rel="stylesheet" href="lib/deck.js/extensions/scale/deck.scale.css">
+  <link rel="stylesheet" href="lib/deck.automatic.js/automatic/deck.automatic.css">
+  <link rel="stylesheet" href="lib/deck.js/themes/style/web-2.0.css">
+  <link rel="stylesheet" href="css/deck.narrator.css">
+  <link rel="stylesheet" href="lib/deck.js/themes/transition/horizontal-slide.css">
+  <script src="lib/deck.js/modernizr.custom.js"></script>
+</head>
+<body class="deck-container">
+  <section class="slide story-cover" data-narrator-duration="7" data-duration="7000">
+    <div class="story-cover-content">
+      <p class="story-cover-kicker">¡Abre bien los ojos!</p>
+      <h1>Pinocho</h1>
+      <p class="story-cover-subtitle">Una aventura mágica llena de sorpresas</p>
+      <footer>¡Pulsa Play y comienza el cuento!</footer>
+    </div>
+  </section>
+
+    <section class="slide story-illustration" data-narrator-duration="38" data-duration="38000">
+      <img src="imagenes/1.jpg" width="100%" alt="Imagen 1 del cuento Pinocho">
+    </section>
+
+    <section class="slide story-illustration" data-narrator-duration="17" data-duration="17000">
+      <img src="imagenes/2.jpg" width="100%" alt="Imagen 2 del cuento Pinocho">
+    </section>
+
+    <section class="slide story-illustration" data-narrator-duration="39" data-duration="39000">
+      <img src="imagenes/3.jpg" width="100%" alt="Imagen 3 del cuento Pinocho">
+    </section>
+
+    <section class="slide story-illustration" data-narrator-duration="35" data-duration="35000">
+      <img src="imagenes/4.jpg" width="100%" alt="Imagen 4 del cuento Pinocho">
+    </section>
+
+    <section class="slide story-illustration" data-narrator-duration="39" data-duration="39000">
+      <img src="imagenes/5.jpg" width="100%" alt="Imagen 5 del cuento Pinocho">
+    </section>
+
+    <section class="slide story-illustration" data-narrator-duration="34" data-duration="34000">
+      <img src="imagenes/6.jpg" width="100%" alt="Imagen 6 del cuento Pinocho">
+    </section>
+
+    <section class="slide story-illustration" data-narrator-duration="34" data-duration="34000">
+      <img src="imagenes/7.jpg" width="100%" alt="Imagen 7 del cuento Pinocho">
+    </section>
+
+    <section class="slide story-illustration" data-narrator-duration="45" data-duration="45000">
+      <img src="imagenes/8.jpg" width="100%" alt="Imagen 8 del cuento Pinocho">
+    </section>
+
+    <section class="slide story-illustration" data-narrator-duration="88" data-duration="88000">
+      <img src="imagenes/9.jpg" width="100%" alt="Imagen 9 del cuento Pinocho">
+    </section>
+
+    <section class="slide story-illustration" data-narrator-duration="156" data-duration="156000">
+      <img src="imagenes/10.jpg" width="100%" alt="Imagen 10 del cuento Pinocho">
+    </section>
+
+  <nav aria-label="Navegación del cuento">
+    <a href="#" class="deck-prev-link" title="Previa" aria-label="Diapositiva anterior">←</a>
+    <a href="#" class="deck-next-link" title="Próxima" aria-label="Diapositiva siguiente">→</a>
+  </nav>
+  <p class="deck-status"><span class="deck-status-current"></span> / <span class="deck-status-total"></span></p>
+  <audio controls class="deck-narrator-audio" id="narrator-audio">
+    <source src="audio/audio.mp3" type="audio/mpeg">
+  </audio>
+  <script src="lib/deck.js/jquery.min.js"></script>
+  <script src="lib/deck.js/core/deck.core.js"></script>
+  <script src="lib/deck.js/extensions/menu/deck.menu.js"></script>
+  <script src="lib/deck.js/extensions/status/deck.status.js"></script>
+  <script src="lib/deck.js/extensions/navigation/deck.navigation.js"></script>
+  <script src="lib/deck.js/extensions/scale/deck.scale.js"></script>
+  <script src="lib/deck.automatic.js/automatic/deck.automatic.js"></script>
+  <script src="js/deck.narrator.js"></script>
+  <script>
+    $(function() {
+      $.extend(true, $.deck.defaults, { automatic: { startRunning: false, cycle: false } });
+      $.deck(".slide");
+    });
+  </script>
+</body>
+</html>
